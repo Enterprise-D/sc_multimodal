@@ -19,3 +19,4 @@ fraction_plot = ggplot(metadata_stat, aes(fill = cell_type, y = fraction, x = da
   geom_text(aes(label = paste0(round(fraction*100,1),'%')),size = 3, position = position_stack(vjust = 0.5))
 fraction_plot
 ggsave('fraction.jpg',fraction_plot)
+
